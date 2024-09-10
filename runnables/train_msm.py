@@ -12,7 +12,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 torch.set_default_dtype(torch.double)
 
-
+# Visited
 @hydra.main(config_name=f'config.yaml', config_path='../config/')
 def main(args: DictConfig):
     """
